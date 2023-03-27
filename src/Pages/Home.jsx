@@ -1,43 +1,49 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <div className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row md:justify-between items-center">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-gray-800">
-            Welcome to Our Store
+            Welcome to DoorSteps
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui nec quam ullamcorper malesuada at in
-            mauris.
+            Shop the latest trends and discover unbeatable deals. Your one-stop-shop for all your fashion needs.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg font-semibold">
-            Shop Now
-          </button>
+          <Link to="/products">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-8 rounded-full font-semibold">
+              Shop Now
+            </button>
+          </Link>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
-          <img src="https://via.placeholder.com/500x400" alt="Product Image" className="w-full rounded-lg shadow-md" />
+          <img
+            src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+            alt="Product Image"
+            className="w-full rounded-lg"
+          />
         </div>
       </div>
-      <div className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row md:justify-between">
+      <div className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center md:justify-between">
         <div className="md:w-1/2 mb-12 md:mb-0">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-gray-800">
             Featured Products
           </h2>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui nec quam ullamcorper malesuada at in
-            mauris.
+            Upgrade your shopping experience with our carefully curated selection.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg font-semibold">
-            View All Products
-          </button>
+          <Link to="/products">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-8 rounded-full font-semibold">
+              View All Products
+            </button>
+          </Link>
         </div>
         <div className="md:w-1/2">
           <img
-            src="https://via.placeholder.com/600x400"
+            src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
             alt="Featured Product Image"
-            className="w-full rounded-lg shadow-md"
+            className="w-full rounded-lg"
           />
         </div>
       </div>

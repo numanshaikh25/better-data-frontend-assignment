@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="mt-24">
         <Routes>
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/products" element={<Products />} />
