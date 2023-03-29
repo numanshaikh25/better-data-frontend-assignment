@@ -22,7 +22,7 @@ describe("Sidebar component", () => {
 
   test("renders all categories and 'All' option is bolded", () => {
     const allCategory = screen.getByText("All");
-    expect(allCategory).toHaveClass("font-bold");
+    expect(allCategory).toHaveClass("font-semibold");
 
     categories.forEach((category) => {
       const categoryElement = screen.getByText(category);
