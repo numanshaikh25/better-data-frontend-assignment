@@ -21,7 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run storybook`
 
-Launches the storybook instance on the browser and allows to access it on [http://localhost:6006](http://localhost:6006)in your browser.
+Launches the storybook instance on the browser and allows to access it on [http://localhost:6006](http://localhost:6006) in your browser.
 
 ### `npm run build`
 
