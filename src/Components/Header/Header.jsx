@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
-import logo from "../images/DoorSteps.png";
+import logo from "../../assets/images/DoorSteps.png";
+import PrimaryButton from "../Common/PrimaryButton";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -50,18 +51,18 @@ const Header = () => {
             <input
               type="text"
               value={search}
-              className="bg-gray-100 rounded-full py-2 px-4 focus:outline-gray-200 focus:shadow-outline-gray w-full"
+              className="bg-gray-100 rounded-full py-2 px-4 focus:outline-gray-200 focus:shadow-outline-gray w-full mr-2"
               placeholder="Search products..."
               onChange={(e) => setSearch(e.target.value)}
             />
 
-            <button
-              type="submit"
-              onClick={handleSearchSubmit}
-              className="bg-yellow-500 text-white rounded-full px-4 py-2 ml-2 hover:bg-yellow-600"
-            >
-              <FaSearch />
-            </button>
+            <PrimaryButton
+              aria-label="Search"
+              // type="submit"
+              event={handleSearchSubmit}
+              text={<FaSearch />}
+              roundness="rounded-full"
+            />
           </form>
           <nav className="flex flex-col md:flex-row">
             <Link

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PrimaryButton from "../../Components/Common/PrimaryButton";
 const Home = () => {
   return (
     <div className="">
@@ -12,9 +13,7 @@ const Home = () => {
             Shop the latest trends and discover unbeatable deals. Your one-stop-shop for all your fashion needs.
           </p>
           <Link to="/products">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-8 rounded-full font-semibold">
-              Shop Now
-            </button>
+            <PrimaryButton text="Shop Now" roundness="rounded-full" />
           </Link>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
@@ -34,9 +33,7 @@ const Home = () => {
             Upgrade your shopping experience with our carefully curated selection.
           </p>
           <Link to="/products">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-8 rounded-full font-semibold">
-              View All Products
-            </button>
+            <PrimaryButton text="View All Products" roundness="rounded-full" />
           </Link>
         </div>
         <div className="md:w-1/2">

@@ -17,11 +17,6 @@ const ProductCard = ({ product }) => {
           <h3 className="text-gray-500 mb-2 font-medium text-sm truncate">{product.title}</h3>
           <p className="text-gray-400 text-sm mb-2 truncate">{product.description}</p>
           <div className="text-2xl font-semibold mb-2">${product.price}</div>
-          {/* <Link to={`/products/${product.id}`}>
-            <button className="bg-yellow-500 text-white rounded-full py-2 px-4 hover:bg-yellow-600 transition-colors duration-300">
-              View
-            </button>
-          </Link> */}
         </div>
       </div>
     </Link>

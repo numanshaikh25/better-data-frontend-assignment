@@ -1,0 +1,27 @@
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  margin: 0;
+}
+
+.slider-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background-color: #d1d5db;
+}
+
+.slider-thumb {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 2px solid #4b5563;
+  border-radius: 50%;
+  margin-top: -4px;
+  margin-left: -5px;
+}
